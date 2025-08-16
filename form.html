@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>活動報名表單</title>
+   <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <header class="title">
+    <h1>2025 夏日市集活動報名</h1>
+
+  </header>
+
+<hr /> <!--只是一條線-->
+
+<span class="enter">請輸入您的資料，以利報名的手續順利，謝謝!</span> <!--輸入文字-->
+
+  <main>
+    <!--註解-->
+
+    <!-- <img src="../images/han.jpg"  width="170" height="300">
+    <img src="../images/kai.jpg"  width="300" height="170"> -->
+
+    <form id="signupForm" onsubmit="showMessage(); return false;">
+      <br />
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required /> <!--required:必填-->
+      <br />
+      <label for="email">電子郵件：</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="phone">電話：</label>
+      <input type="tel" id="phone" name="phone" required />
+      <br />
+      <label for="message">備註：</label>
+      <textarea id="message" name="message"></textarea>
+      <br />
+      <br />
+      <button type="submit">送出報名</button>
+      <br /> <!--換行-->
+      <!-- <a href="https://www.youtube.com" target="_blank">Youtube</a> --> <!--超連結 -->
+      <!-- <a href="https://www.w3schools.com " target="_blank"> <img src="../images/han.jpg" width="50" height="100"></a> -->
+
+    </form> 
+
+    <div id="successMessage" style="display: none;">✅ 感謝您的報名！<br /> 正在重新導向...</div>
+    
+
+    <!-- <script> //可以寫在.js檔裡
+      function showMessage(){
+        document.getElementById("successMessage").style.display="block";
+      }
+    </script> -->
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
